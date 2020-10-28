@@ -1,4 +1,10 @@
-const app = require('express')
+const app = require('express')()
+
+app.get("/", (req, res) => {
 
 
-app.li
+
+    res.sendFile(__dirname + '/index.html')
+})
+
+app.listen(3000)
